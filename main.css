@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.cards-container {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-a {
+  width: 50%;
+  height: auto;
+}
+
+.card-a .card-quote {
+  padding: 1.5rem;
+  position: relative;
+  background-color: rgb(36, 36, 36);
+  border-radius: 20px;
+  color: #fff;
+  line-height: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-a .card-quote::after {
+  content: "";
+  position: absolute;
+  /* display: block; */
+  top: 100%;
+  left: 10%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgb(36, 36, 36);
+}
+
+.card-a img,
+.card-b img,
+.card-d img {
+  border-radius: 50%;
+}
+
+.card-a img,
+.card-b img {
+  width: 20%;
+  margin-right: 0.5rem;
+}
+
+.user {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.card-b .user {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.card-a .user-name,
+.card-b .user-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-b {
+  width: 50%;
+}
+
+.card-b {
+  padding: 1rem 0.8rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  line-height: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-c {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-c img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.card-c .card-quote {
+  width: 130%;
+  padding: 1.2rem;
+  background-color: rgb(36, 36, 36);
+  border-radius: 20px;
+  color: #fff;
+  line-height: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.stars {
+  margin-bottom: 1rem;
+}
+
+.star {
+  margin: -0.2rem;
+  color: gold;
+  font-size: 2rem;
+}
+
+.card-c .user {
+  padding: 0;
+}
+
+.card-c .user-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-c .user-job {
+  color: rgb(150, 150, 150);
+  margin-bottom: 0.8rem;
+}
+
+.card-d {
+  margin-top: 1rem;
+}
+
+.card-d {
+  padding: 2rem 4rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.card-d .user {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-d .user-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-d .user button {
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.card-d .user button:hover {
+  color: red;
+}
+
+.card-d img {
+  width: 15%;
+  height: 15%;
+}
+
+.card-d img:nth-child(2n) {
+  height: 10%;
+  width: 10%;
+  opacity: 50%;
+}
+
+.card-d .user-name {
+  font-size: 1.2rem;
+}
